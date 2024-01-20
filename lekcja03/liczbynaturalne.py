@@ -69,8 +69,7 @@ class LiczbaNaturalna():
     self.cyfry = nowe_cyfry
   """
 
-  def __repr__(self) -> str:
-    
+  def __repr__(self) -> str:    
     s = "LiczbaNaturalna([" + ",".join(map(lambda cyfra: f"{cyfra}",self.cyfry)) + "])"
     return s
 

@@ -2,7 +2,7 @@ import unittest
 from liczbynaturalne import LiczbaNaturalna
 
 class TestLiczbyNaturalne(unittest.TestCase):
-  def test_representation(self):
+  def test_01_representation(self):
     """
     Test sprawdza czy poprawie tworzona jest reprezentacja liczby w pamieci komputera
     """
@@ -16,7 +16,7 @@ class TestLiczbyNaturalne(unittest.TestCase):
     with self.assertRaises(TypeError,msg="Brak sprawdzania błedów typów podczas tworzenia reprezentacji liczby naturalnej"):
       l1 = LiczbaNaturalna(2)
       
-  def test_add(self):
+  def test_02_add(self):
     """
     Sprawdza poprawność implementacji operacji dodawania
     """
